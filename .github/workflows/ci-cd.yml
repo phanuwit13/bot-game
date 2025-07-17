@@ -30,4 +30,4 @@ jobs:
           docker pull phanuwit13/bot-game:${{ github.sha }}
           docker stop bot-game || true
           docker rm bot-game || true
-          docker run -d --name bot-game -p 8001:8080 phanuwit13/bot-game:${{ github.sha }}
+          docker run -d --name bot-game -p 8002:8080 phanuwit13/bot-game:${{ github.sha }}
